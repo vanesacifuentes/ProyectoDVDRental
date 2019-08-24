@@ -6,7 +6,7 @@
 package JFrame;
 
 
-import AppPackage.AnimationClass;
+
 import com.sun.awt.AWTUtilities;
 import java.awt.Shape;
 import java.awt.event.ActionEvent;
@@ -359,9 +359,9 @@ public class Login extends javax.swing.JFrame implements ActionListener {
     }//GEN-LAST:event_JBNoCuentaActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        setVisible(false);
+   /*     setVisible(false);
         Menu llamado = new Menu();
-        llamado.setVisible(true);
+        llamado.setVisible(true);*/
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void JTNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTNombreActionPerformed

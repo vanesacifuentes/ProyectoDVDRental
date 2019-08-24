@@ -9,12 +9,12 @@ package InternalFrame;
  *
  * @author nicol
  */
-public class iFdireccion extends javax.swing.JInternalFrame {
+public class iFempleado extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form iFdireccion
+     * Creates new form iFempleado
      */
-    public iFdireccion() {
+    public iFempleado() {
         initComponents();
     }
 

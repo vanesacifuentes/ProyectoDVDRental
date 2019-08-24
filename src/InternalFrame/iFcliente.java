@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package JPanel;
+package InternalFrame;
 
 /**
  *
  * @author nicol
  */
-public class JPcliente extends javax.swing.JPanel {
-   
+public class iFcliente extends javax.swing.JInternalFrame {
+
     /**
-     * Creates new form JPcliente_empleado
+     * Creates new form iFcliente
      */
-    public JPcliente() {
+    public iFcliente() {
         initComponents();
     }
 
@@ -27,14 +27,15 @@ public class JPcliente extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jPingreso = new javax.swing.JPanel();
         jTextField6 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        jTtitulo = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        jTaño = new javax.swing.JTextField();
         jTextField9 = new javax.swing.JTextField();
         jTextField10 = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
@@ -51,12 +52,12 @@ public class JPcliente extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jPbotones = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        jBnuevo = new javax.swing.JButton();
+        jBmodificar = new javax.swing.JButton();
+        jBeliminar = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPingreso.setBackground(new java.awt.Color(255, 255, 255));
         jPingreso.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Datos cliente", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Decker", 0, 14), new java.awt.Color(238, 112, 82))); // NOI18N
@@ -72,15 +73,15 @@ public class JPcliente extends javax.swing.JPanel {
         });
         jPingreso.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, 240, 20));
 
-        jTextField3.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(102, 102, 102));
-        jTextField3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        jTtitulo.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
+        jTtitulo.setForeground(new java.awt.Color(102, 102, 102));
+        jTtitulo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTtitulo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                jTtituloActionPerformed(evt);
             }
         });
-        jPingreso.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 240, 20));
+        jPingreso.add(jTtitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 240, 20));
 
         jLabel4.setBackground(new java.awt.Color(238, 112, 82));
         jLabel4.setFont(new java.awt.Font("Decker", 0, 13)); // NOI18N
@@ -105,15 +106,15 @@ public class JPcliente extends javax.swing.JPanel {
         jLabel12.setText("Texto completo:");
         jPingreso.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 240, -1, -1));
 
-        jTextField7.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
-        jTextField7.setForeground(new java.awt.Color(102, 102, 102));
-        jTextField7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        jTaño.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
+        jTaño.setForeground(new java.awt.Color(102, 102, 102));
+        jTaño.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTaño.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                jTañoActionPerformed(evt);
             }
         });
-        jPingreso.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 240, -1));
+        jPingreso.add(jTaño, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 240, -1));
 
         jTextField9.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
         jTextField9.setForeground(new java.awt.Color(102, 102, 102));
@@ -207,7 +208,7 @@ public class JPcliente extends javax.swing.JPanel {
         });
         jPingreso.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 240, -1));
 
-        add(jPingreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 660, 390));
+        jPanel1.add(jPingreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 660, 390));
 
         jPtabla.setBackground(new java.awt.Color(255, 255, 255));
         jPtabla.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(153, 153, 153))); // NOI18N
@@ -238,52 +239,75 @@ public class JPcliente extends javax.swing.JPanel {
 
         jPtabla.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 150));
 
-        add(jPtabla, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 660, 150));
+        jPanel1.add(jPtabla, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 660, 150));
 
         jPbotones.setBackground(new java.awt.Color(255, 255, 255));
         jPbotones.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
         jPbotones.setForeground(new java.awt.Color(102, 102, 102));
         jPbotones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton5.setBackground(new java.awt.Color(238, 112, 82));
-        jButton5.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(238, 112, 82));
-        jButton5.setText("Nuevo");
-        jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 112, 82)));
-        jButton5.setContentAreaFilled(false);
-        jButton5.setDefaultCapable(false);
-        jPbotones.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, 60, 30));
+        jBnuevo.setBackground(new java.awt.Color(238, 112, 82));
+        jBnuevo.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
+        jBnuevo.setForeground(new java.awt.Color(238, 112, 82));
+        jBnuevo.setText("Nuevo");
+        jBnuevo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 112, 82)));
+        jBnuevo.setContentAreaFilled(false);
+        jBnuevo.setDefaultCapable(false);
+        jPbotones.add(jBnuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, 60, 30));
 
-        jButton7.setBackground(new java.awt.Color(238, 112, 82));
-        jButton7.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(238, 112, 82));
-        jButton7.setText("Modificar");
-        jButton7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 112, 82)));
-        jButton7.setContentAreaFilled(false);
-        jPbotones.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, 80, 30));
+        jBmodificar.setBackground(new java.awt.Color(238, 112, 82));
+        jBmodificar.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
+        jBmodificar.setForeground(new java.awt.Color(238, 112, 82));
+        jBmodificar.setText("Modificar");
+        jBmodificar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 112, 82)));
+        jBmodificar.setContentAreaFilled(false);
+        jPbotones.add(jBmodificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, 80, 30));
 
-        jButton9.setBackground(new java.awt.Color(238, 112, 82));
-        jButton9.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(238, 112, 82));
-        jButton9.setText("Eliminar");
-        jButton9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 112, 82)));
-        jButton9.setContentAreaFilled(false);
-        jPbotones.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 70, 30));
+        jBeliminar.setBackground(new java.awt.Color(238, 112, 82));
+        jBeliminar.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
+        jBeliminar.setForeground(new java.awt.Color(238, 112, 82));
+        jBeliminar.setText("Eliminar");
+        jBeliminar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 112, 82)));
+        jBeliminar.setContentAreaFilled(false);
+        jPbotones.add(jBeliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 70, 30));
 
-        add(jPbotones, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, 660, 50));
+        jPanel1.add(jPbotones, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, 660, 50));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 745, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 745, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 647, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 647, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField6ActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void jTtituloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTtituloActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_jTtituloActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void jTañoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTañoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_jTañoActionPerformed
 
     private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
         // TODO add your handling code here:
@@ -315,10 +339,10 @@ public class JPcliente extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBeliminar;
+    private javax.swing.JButton jBmodificar;
+    private javax.swing.JButton jBnuevo;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -328,19 +352,20 @@ public class JPcliente extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPbotones;
     private javax.swing.JPanel jPingreso;
     private javax.swing.JPanel jPtabla;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTaño;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jTtitulo;
     // End of variables declaration//GEN-END:variables
 }

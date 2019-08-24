@@ -113,9 +113,7 @@ public class MenuCliente extends javax.swing.JFrame {
 
     private void BmensajesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BmensajesMouseClicked
         // TODO add your handling code here:
-        setVisible(false);
-        Chat llamado = new Chat();
-        llamado.setVisible(true);
+      
     }//GEN-LAST:event_BmensajesMouseClicked
 
     /**

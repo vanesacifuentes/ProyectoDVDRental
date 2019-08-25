@@ -7,6 +7,9 @@ package JFrame;
 
 import InternalFrame.iFalquiler;
 import InternalFrame.iFchatEmpleado;
+import InternalFrame.iFcliente;
+import InternalFrame.iFdevolucion;
+import InternalFrame.iFempleado;
 import InternalFrame.iFpelicula;
 import com.sun.awt.AWTUtilities;
 import java.awt.Shape;
@@ -55,7 +58,7 @@ public class InterfazPrincipal extends javax.swing.JFrame {
         jMsalir = new javax.swing.JMenuItem();
         Mantenimiento = new javax.swing.JMenu();
         jMpeliculas = new javax.swing.JMenuItem();
-        jMclintes = new javax.swing.JMenuItem();
+        jMclientes = new javax.swing.JMenuItem();
         jMemplados = new javax.swing.JMenuItem();
         jMenuItem8 = new javax.swing.JMenuItem();
 
@@ -108,6 +111,11 @@ public class InterfazPrincipal extends javax.swing.JFrame {
 
         jMdevolver.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
         jMdevolver.setText("Realizar devolución");
+        jMdevolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMdevolverActionPerformed(evt);
+            }
+        });
         Devolucion.add(jMdevolver);
 
         jMenuItem10.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
@@ -151,12 +159,22 @@ public class InterfazPrincipal extends javax.swing.JFrame {
         });
         Mantenimiento.add(jMpeliculas);
 
-        jMclintes.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
-        jMclintes.setText("Clientes");
-        Mantenimiento.add(jMclintes);
+        jMclientes.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
+        jMclientes.setText("Clientes");
+        jMclientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMclientesActionPerformed(evt);
+            }
+        });
+        Mantenimiento.add(jMclientes);
 
         jMemplados.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
         jMemplados.setText("Empleados");
+        jMemplados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMempladosActionPerformed(evt);
+            }
+        });
         Mantenimiento.add(jMemplados);
 
         jMenuItem8.setFont(new java.awt.Font("Decker", 0, 12)); // NOI18N
@@ -179,22 +197,43 @@ public class InterfazPrincipal extends javax.swing.JFrame {
 
     private void MantenimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MantenimientoActionPerformed
        
-        iFchatEmpleado chat = new iFchatEmpleado();
-        jDesktopPane.add(chat);
-        chat.setVisible(true);      
+          
     }//GEN-LAST:event_MantenimientoActionPerformed
 
     private void jMpeliculasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMpeliculasActionPerformed
         // TODO add your handling code here:
          iFpelicula pelicula = new iFpelicula();
         jDesktopPane.add(pelicula);
-       // pelicula.setLocation(745, 647);
         pelicula.setVisible(true);
     }//GEN-LAST:event_jMpeliculasActionPerformed
 
     private void jMchatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMchatActionPerformed
         // TODO add your handling code here:
+        iFchatEmpleado chat = new iFchatEmpleado();
+        jDesktopPane.add(chat);
+        chat.setVisible(true); 
     }//GEN-LAST:event_jMchatActionPerformed
+
+    private void jMclientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMclientesActionPerformed
+        // TODO add your handling code here:
+        iFcliente cliente = new iFcliente();
+        jDesktopPane.add(cliente);
+        cliente.setVisible(true);
+    }//GEN-LAST:event_jMclientesActionPerformed
+
+    private void jMdevolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMdevolverActionPerformed
+        // TODO add your handling code here:
+        iFdevolucion devolver = new iFdevolucion();
+        jDesktopPane.add(devolver);
+        devolver.setVisible(true); 
+    }//GEN-LAST:event_jMdevolverActionPerformed
+
+    private void jMempladosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMempladosActionPerformed
+        // TODO add your handling code here:
+        iFempleado empleado = new iFempleado();
+        jDesktopPane.add(empleado);
+        empleado.setVisible(true); 
+    }//GEN-LAST:event_jMempladosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -239,7 +278,7 @@ public class InterfazPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMalquiladas;
     private javax.swing.JMenuItem jMalquilar;
     private javax.swing.JMenuItem jMchat;
-    private javax.swing.JMenuItem jMclintes;
+    private javax.swing.JMenuItem jMclientes;
     private javax.swing.JMenuItem jMdevolver;
     private javax.swing.JMenuItem jMemplados;
     private javax.swing.JMenuBar jMenuBar1;
